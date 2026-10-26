@@ -1,29 +1,19 @@
 <!doctype html>
-<html lang="de">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
-<title>Klopost 💩📬 – Post vom Thron</title>
-<meta name="description" content="Klopost – Post vom Thron: Melde, wenn du scheißen warst – deine Freunde kriegen sofort eine Push-Nachricht.">
-<meta name="theme-color" content="#FFD23F">
-<link rel="manifest" href="manifest.webmanifest">
+<html lang="de"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Klopost ist umgezogen 📬</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://klopost.github.io/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="icon" href="favicon.ico" sizes="32x32">
-<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="Klopost">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="app.css?v=1">
-</head>
-<body>
-<div id="app"><div class="boot"><div class="boot-poop">💩</div><p>Klo wird vorgewärmt …</p></div></div>
-<div id="toasts"></div>
-<div id="fx"></div>
-<script src="config.js?v=1"></script>
-<script src="vendor/supabase.js"></script>
-<script src="app.js?v=1"></script>
-</body>
-</html>
+<script>
+(function () {
+  var q = location.search || "", h = location.hash || "";
+  var target = "https://klopost.github.io/" + q + h;
+  if (navigator.serviceWorker) navigator.serviceWorker.getRegistrations().then(function (rs) { rs.forEach(function (r) { r.unregister(); }); }).catch(function () {});
+  location.replace(target);
+  document.addEventListener("DOMContentLoaded", function () { var a = document.getElementById("go"); if (a) a.href = target; });
+})();
+</script>
+<noscript><meta http-equiv="refresh" content="0; url=https://klopost.github.io/"></noscript>
+<style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#FFF6E9;color:#3B2416;font:600 18px/1.4 system-ui,sans-serif;text-align:center;padding:20px}a{color:#FF5D8F;font-weight:800}</style>
+</head><body><div><div style="font-size:64px">📬💩</div><p>Klopost ist umgezogen!<br>Weiter geht's auf <a id="go" href="https://klopost.github.io/">klopost.github.io</a></p></div></body></html>
